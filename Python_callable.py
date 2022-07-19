@@ -57,12 +57,12 @@
 
 # print(on_update('kwaku'))
 
-from typing import Any
+# from typing import Any
 
-a: Any = None
-a= []
-a=2
+# a: Any = None
+# a= []
+# a=2
 
-s: str = ''
-print(s=a)
+# s: str = ''
+# print(s=a)
 
