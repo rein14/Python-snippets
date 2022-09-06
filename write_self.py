@@ -166,26 +166,35 @@
 #         print(arg)
 
 
-import functools
+# import functools
  
 
-@functools.singledispatch
-def pretty_pprint(arg):
-    print(arg)
+# @functools.singledispatch
+# def pretty_pprint(arg):
+#     print(arg)
 
-@pretty_pprint.register(complex)
-def _(arg):
-    print(f"{arg.real} + {arg.imag}i")
+# @pretty_pprint.register(complex)
+# def _(arg):
+#     print(f"{arg.real} + {arg.imag}i")
 
-@pretty_pprint.register(list)
-@pretty_pprint.register(tuple)
-def _(arg):
-    for i, elem in enumerate(arg):
-        print(i, elem)
+# @pretty_pprint.register(list)
+# @pretty_pprint.register(tuple)
+# def _(arg):
+#     for i, elem in enumerate(arg):
+#         print(i, elem)
 
-@pretty_pprint.register(dict)
-def _(arg):
-    for key, value in arg.items():
-        print(f"{key}: {value}")
+# @pretty_pprint.register(dict)
+# def _(arg):
+#     for key, value in arg.items():
+#         print(f"{key}: {value}")
 
-print(pretty_pprint(8))
+# print(pretty_pprint(8))
+
+
+matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7]]
+
+print(len(matrix))
+for i in range(len(matrix)//2):
+    for j in range(i, len(matrix)-1):
+        temp = matrix[i][j]
+        
